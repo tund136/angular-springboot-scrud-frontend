@@ -15,6 +15,8 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit(): void {
     this.getEmployees();
   }
+
+  // tslint:disable-next-line:typedef
   private getEmployees() {
     this.employeeService.getEmployeesList().subscribe((data) => {
       this.employees = data;
